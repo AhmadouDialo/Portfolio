@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="1" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" fill="#0b0d12"/>
+  <circle cx="760" cy="-40" r="340" fill="url(#g)" opacity="0.25"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Inter, system-ui, Arial" font-size="36" fill="#bcd0e8" opacity="0.9">
+    3D Artwork Placeholder
+  </text>
+</svg>
+

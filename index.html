@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmadou — 3D Student Portfolio</title>
+    <meta name="description" content="Portfolio of a 3D student — projects, Figma designs, and CV." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home">Ahmadou<span>.</span></a>
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">☰</button>
+          <ul id="menu" class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Hi, I’m <span class="accent">Ahmadou</span></h1>
+            <p class="lead">3D student focusing on environment modeling, look‑dev, and real‑time visuals.</p>
+            <div class="cta-group">
+              <a class="btn primary" href="#projects">See Projects</a>
+              <a class="btn" href="#cv">View CV</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <div class="hero-card">
+              <img src="assets/images/placeholder-hero.svg" alt="3D artwork preview" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              I’m a 3D art student passionate about building immersive, believable worlds.
+              I enjoy translating references into stylized environments and iterate quickly with real‑time engines.
+            </p>
+            <p>
+              Currently exploring procedural workflows and shader tricks to push quality while keeping scenes performant.
+            </p>
+          </div>
+          <ul class="about-highlights">
+            <li>Environment modeling & prop art</li>
+            <li>Materials, lighting, and look‑dev</li>
+            <li>Real‑time: Unity/Unreal basics</li>
+            <li>Figma for UX flows and hand‑off</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="chip-group">
+            <span class="chip">Blender</span>
+            <span class="chip">Maya</span>
+            <span class="chip">Substance 3D</span>
+            <span class="chip">ZBrush</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">Unreal</span>
+            <span class="chip">Unity</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects with Figma embeds -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <p class="subtle">3D selections and associated design docs</p>
+          </div>
+
+          <div class="grid cards">
+            <!-- Project Card 1 -->
+            <article class="card">
+              <img src="assets/images/placeholder-project-1.svg" alt="Project 1 thumbnail" />
+              <div class="card-body">
+                <h3>Forest Ruins — Study</h3>
+                <p>Environment exercise: modular ruins, mossy rocks, and mood lighting.</p>
+                <div class="card-actions">
+                  <button class="btn small toggle-figma" data-figma-url="https://embed.figma.com/proto/uxJ4L37ce2WPO8xf7qhphb/Portfolio-Pro?page-id=580%3A161&node-id=594-94&viewport=298%2C218%2C0.1&scaling=scale-down-width&content-scaling=fixed&embed-host=share">View Figma</button>
+                  <a class="btn small ghost" href="#" aria-disabled="true">Case Study (soon)</a>
+                </div>
+                <div class="figma-embed" hidden>
+                  <iframe loading="lazy" allowfullscreen title="Figma embed"
+                          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article class="card">
+              <img src="assets/images/placeholder-project-2.svg" alt="Project 2 thumbnail" />
+              <div class="card-body">
+                <h3>Props Pack — Stylized</h3>
+                <p>Hand‑painted props set for a cozy interior scene.</p>
+                <div class="card-actions">
+                  <button class="btn small toggle-figma" data-figma-url="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYOUR_OTHER_FILE_ID%2FAnother-Project">View Figma</button>
+                  <a class="btn small ghost" href="#" aria-disabled="true">Case Study (soon)</a>
+                </div>
+                <div class="figma-embed" hidden>
+                  <iframe loading="lazy" allowfullscreen title="Figma embed"
+                          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project Card 3 (example 3D viewer placeholder) -->
+            <article class="card">
+              <img src="assets/images/placeholder-project-3.svg" alt="Project 3 thumbnail" />
+              <div class="card-body">
+                <h3>Realtime Diorama</h3>
+                <p>Scene assembled in Unreal; baked lighting and post‑fx.</p>
+                <div class="card-actions">
+                  <a class="btn small" href="#contact">Request Playable</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="hint">Tip: Replace the `data-figma-url` on each button with your Figma file or prototype link (use the Figma share URL).</p>
+        </div>
+      </section>
+
+      <!-- CV -->
+      <section id="cv" class="section alt">
+        <div class="container">
+          <h2>CV</h2>
+          <p class="subtle">Inline preview with a download option.</p>
+          <div class="cv-frame">
+            <iframe src="assets/cv/ahmadou-cv.pdf" title="CV PDF preview" loading="lazy"></iframe>
+          </div>
+          <div class="cta-group">
+            <a class="btn" href="assets/cv/ahmadou-cv.pdf" download>Download CV (PDF)</a>
+          </div>
+          <p class="hint">Place your actual CV at <code>assets/cv/ahmadou-cv.pdf</code> to update this preview.</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="lead">Let’s talk about collaborations or internships.</p>
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:your.email@example.com">
+              <span class="emoji">✉️</span>
+              <span>Email</span>
+            </a>
+            <a class="contact-card" href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">
+              <span class="emoji">🔗</span>
+              <span>LinkedIn</span>
+            </a>
+            <a class="contact-card" href="https://www.artstation.com/" target="_blank" rel="noreferrer noopener">
+              <span class="emoji">🎨</span>
+              <span>ArtStation</span>
+            </a>
+            <a class="contact-card" href="https://github.com/" target="_blank" rel="noreferrer noopener">
+              <span class="emoji">🐙</span>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Ahmadou. All rights reserved.</p>
+        <a href="#home" class="to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
